@@ -2,7 +2,7 @@
 let votepromise=(name,age)=>new Promise((resolve, reject)=>{
 	if(age>18)
 	{
-		setTimeout(()=>{resolve(`Welcome,${name}.You can vote`)},4000);
+		setTimeout(()=>{resolve(`Welcome, ${name}. You can vote.`)},4000);
 	}
 	else
 	{
