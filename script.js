@@ -16,5 +16,11 @@ document.getElementById('f1').addEventListener('submit',(e)=>
 		let age=document.getElementById('age').value;
 		let name=document.getElementById('name').value;
 
+		if(age===''||name==='')
+		{
+			alert("Please enter the valid details");
+			return;
+		}
+
 		votepromise(name,age).then((msg1)=> alert(msg1)).catch((msg2)=>alert(msg2));
 	})
